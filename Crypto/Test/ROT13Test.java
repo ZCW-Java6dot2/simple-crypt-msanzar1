@@ -60,14 +60,14 @@ public class ROT13Test {
         String A2 = "To get to the other side!";
 
         // When
-        String actual = cipher.encrypt(Q1);
+        String actual = cipher.encryptAndDecrypt(Q1);
         System.out.println(Q1);
         System.out.println(A1);
         // Then
         assertTrue(actual.equals(A1));
 
         // When
-        String actual2 = cipher.decrypt(Q2);
+        String actual2 = cipher.encryptAndDecrypt(Q2);
         System.out.println(Q2);
         System.out.println(A2);
         // Then
